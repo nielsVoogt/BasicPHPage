@@ -1,0 +1,64 @@
+
+/// ----------------------------------------------------------------------------------------------- THE BASICS
+
+@import 'settings';
+@import 'toolbox';
+
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+/// -----------------------------------------------------------------------------------------------  BASE
+
+@import 'base/normalize';
+@import 'base/font-imports';
+@import 'base/type';
+@import 'base/base';
+
+/// ----------------------------------------------------------------------------------------------- LAYOUT
+
+@import 'layout/layout';
+@import 'layout/navigation';
+@import 'layout/sections';
+
+/// ----------------------------------------------------------------------------------------------- COMPONENTS
+
+// @import 'debug/show-all-elements';
+// @import 'debug/show-breakpoints';
+// @import 'debug/slow-transitions';
+// @import 'debug/diagnostics';
+
+
+@include breakpoint(map-get($breakpoints, small-1)) {
+    body {
+        background: green;
+    }
+}
+
+@include breakpoint(map-get($breakpoints, small-2)) {
+    body {
+        background: yellow;
+    }
+}
+
+@include breakpoint(map-get($breakpoints, medium-1)) {
+    body {
+        background: orange;
+    }
+}
+
+@include breakpoint(map-get($breakpoints, medium-2)) {
+    body {
+        background: brown;
+    }
+}
+
+@include breakpoint(map-get($breakpoints, large-1)) {
+    body {
+        background: pink;
+    }
+}
+
+@include breakpoint(map-get($breakpoints, large-2)) {
+    body {
+        background: #bada55;
+    }
+}

@@ -2,3 +2,5 @@
 /node_modules
 /web/css/*.css
 /.vscode/
+
+package-lock.json

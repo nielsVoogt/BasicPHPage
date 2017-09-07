@@ -33,6 +33,10 @@ var autoprefixerOptions = {
 
 // --------------------------------------------------- BROWSERSYNC TASK (combines 'sass' with 'browsersync')
 
+gulp.task('watch', ['sass'], function() {
+    gulp.watch(sassInput, ['sass']);
+});
+
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
